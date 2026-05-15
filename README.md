@@ -10,7 +10,7 @@ I build fast, own the full stack, and care about outcomes, not just code.
 | Project | What it is | Stack |
 |---|---|---|
 | **SmartCity** | National dashboard for camera-based road violation enforcement | Django · DRF · PostgreSQL · AWS |
-| **Aleem** | AI English learning super-app — 500k users | Django · React Native |
+| **Aleem** | AI English learning super-app — 600k users (Backed by Alchemist Accelerator, San Francisco) | Django · React Native |
 | **VSK Insurance** | Online sport accident insurance platform for VSK — Top-5 Russian insurer, 33M+ clients | Django · Nuxt.js |
 | **Construction Parser** | Extracts and structures soil data from geotechnical PDFs — built for one of the largest US construction firms | Python · Django |
 | **Whale** | MedTech app — medication tracking, mood monitoring, doctor sharing | React Native |
