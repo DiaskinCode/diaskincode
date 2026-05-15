@@ -12,7 +12,7 @@ I build fast, own the full stack, and care about outcomes, not just code.
 |---|---|---|
 | **SmartCity** | National dashboard for camera-based road violation enforcement | Django · DRF · PostgreSQL · AWS |
 | **Hajjum** | Travel app for Muslim pilgrims — maps, routes, offline support | React Native · Django |
-| **Aleem** | AI English learning super-app — 300k users | Django · React Native |
+| **Aleem** | AI English learning super-app — 500k users | Django · React Native |
 | **Hangout** | Social app backend — city events, lobbies, real-time interaction | Django · DRF · Celery |
 | **Beine Jarnama** | Lead marketplace with payments, messaging, and ads (CIS) | Django · React Native |
 | **Finance.kz** | National finance portal — +62% monthly traffic | Vue.js · Nuxt · Laravel |
