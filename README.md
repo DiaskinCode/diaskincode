@@ -1,5 +1,4 @@
 # Hey, I'm Dias 👋
-
 Full-stack developer with 4+ years shipping production web and mobile apps — from national government platforms to Alchemist-backed startups.
 
 I build fast, own the full stack, and care about outcomes, not just code.
@@ -11,11 +10,12 @@ I build fast, own the full stack, and care about outcomes, not just code.
 | Project | What it is | Stack |
 |---|---|---|
 | **SmartCity** | National dashboard for camera-based road violation enforcement | Django · DRF · PostgreSQL · AWS |
-| **Hajjum** | Travel app for Muslim pilgrims — maps, routes, offline support | React Native · Django |
 | **Aleem** | AI English learning super-app — 500k users | Django · React Native |
+| **VSK Insurance** | Online sport accident insurance platform for VSK — Top-5 Russian insurer, 33M+ clients | Django · Nuxt.js |
+| **Construction Parser** | Extracts and structures soil data from geotechnical PDFs — built for one of the largest US construction firms | Python · Django |
+| **Whale** | MedTech app — medication tracking, mood monitoring, doctor sharing | React Native |
 | **Hangout** | Social app backend — city events, lobbies, real-time interaction | Django · DRF · Celery |
-| **Beine Jarnama** | Lead marketplace with payments, messaging, and ads (CIS) | Django · React Native |
-| **Finance.kz** | National finance portal — +62% monthly traffic | Vue.js · Nuxt · Laravel |
+| **Finance.kz** | National finance portal — +62% monthly traffic growth | Vue.js · Nuxt · Laravel |
 | **Plano AI** | AI college admissions platform for international students | Django · Next.js |
 
 25+ clients delivered through [Dala Digital](https://dala.framer.website) since 2020.
@@ -28,7 +28,7 @@ I build fast, own the full stack, and care about outcomes, not just code.
 **Frontend:** React · Next.js · Vue.js · Nuxt  
 **Mobile:** React Native · Expo  
 **Cloud:** AWS · Azure · Docker · CI/CD  
-**DB:** PostgreSQL · Redis  
+**DB:** PostgreSQL · Redis
 
 ---
 
