@@ -19,12 +19,23 @@ STATIC = bool(os.environ.get("STATIC"))
 
 image = Image.open(SOURCE).convert("L")
 image = ImageOps.autocontrast(image, cutoff=1)
-# The avatar is square and the ASCII canvas is also physically square once the
-# character-cell aspect ratio is applied. Resize directly: cropping to the raw
-# 100:53 grid ratio stretches the face and removes the top/bottom of the photo.
 image = image.filter(ImageFilter.GaussianBlur(radius=0.8))
 image = ImageEnhance.Contrast(image).enhance(1.08)
-image = image.resize((COLS, ROWS), Image.Resampling.LANCZOS)
+# Fit the complete photo without distortion. Terminal characters are taller
+# than they are wide, so the raw image-grid aspect ratio must account for the
+# physical character-cell dimensions before centering on a white background.
+source_ratio = image.width / image.height
+grid_ratio = source_ratio * CELL_H / CELL_W
+if grid_ratio >= COLS / ROWS:
+    content_w = COLS
+    content_h = max(1, round(COLS / grid_ratio))
+else:
+    content_h = ROWS
+    content_w = max(1, round(ROWS * grid_ratio))
+image = image.resize((content_w, content_h), Image.Resampling.LANCZOS)
+canvas = Image.new("L", (COLS, ROWS), 255)
+canvas.paste(image, ((COLS - content_w) // 2, (ROWS - content_h) // 2))
+image = canvas
 pixels = image.load()
 rows = []
 for y in range(ROWS):
