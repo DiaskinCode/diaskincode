@@ -1,3 +1,2 @@
-# The daily workflow uses only the Python standard library.
-# Install Pillow locally only when regenerating the portrait:
+# Install Pillow locally when regenerating the portrait:
 Pillow==12.1.1

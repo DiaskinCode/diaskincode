@@ -4,7 +4,7 @@
 import html
 import os
 import sys
-from PIL import Image, ImageEnhance, ImageOps
+from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOURCE = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "source-photo.jpg")
@@ -17,24 +17,14 @@ WIDTH, HEIGHT = ART_W + PAD*2, TITLE_H + ART_H + STATUS_H + PAD
 STATIC = bool(os.environ.get("STATIC"))
 
 
-def cover(image, size):
-    target_ratio = size[0] / size[1]
-    ratio = image.width / image.height
-    if ratio > target_ratio:
-        crop_w = round(image.height * target_ratio)
-        left = (image.width - crop_w) // 2
-        image = image.crop((left, 0, left + crop_w, image.height))
-    else:
-        crop_h = round(image.width / target_ratio)
-        top = (image.height - crop_h) // 2
-        image = image.crop((0, top, image.width, top + crop_h))
-    return image.resize(size, Image.Resampling.LANCZOS)
-
-
 image = Image.open(SOURCE).convert("L")
 image = ImageOps.autocontrast(image, cutoff=1)
-image = ImageEnhance.Contrast(image).enhance(1.12)
-image = cover(image, (COLS, ROWS))
+# The avatar is square and the ASCII canvas is also physically square once the
+# character-cell aspect ratio is applied. Resize directly: cropping to the raw
+# 100:53 grid ratio stretches the face and removes the top/bottom of the photo.
+image = image.filter(ImageFilter.GaussianBlur(radius=0.8))
+image = ImageEnhance.Contrast(image).enhance(1.08)
+image = image.resize((COLS, ROWS), Image.Resampling.LANCZOS)
 pixels = image.load()
 rows = []
 for y in range(ROWS):
