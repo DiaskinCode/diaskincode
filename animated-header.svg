@@ -16,15 +16,15 @@
   <circle cx="54" cy="15" r="5" fill="#27c93f"/>
   <text x="430" y="19" fill="#7d8590" font-size="12" text-anchor="middle">dias@github: ~$ ./profile.sh</text>
   <g clip-path="url(#line1)">
-    <text x="24" y="72" fill="#c9d1d9" font-size="17"><tspan fill="#22d3ee">&gt;</tspan> Full-stack developer · production web + mobile</text>
+    <text x="24" y="72" fill="#c9d1d9" font-size="17"><tspan fill="#22d3ee">&gt;</tspan> Alchemist Accelerator · Silicon Valley</text>
   </g>
   <g clip-path="url(#line2)">
-    <text x="24" y="109" fill="#c9d1d9" font-size="17"><tspan fill="#39d353">&gt;</tspan> 4+ years · 25+ clients · 65+ launches · 600k users</text>
+    <text x="24" y="109" fill="#c9d1d9" font-size="17"><tspan fill="#39d353">&gt;</tspan> Built an AI product serving 600k users</text>
   </g>
   <g clip-path="url(#line3)">
-    <text x="24" y="146" fill="#c9d1d9" font-size="17"><tspan fill="#a371f7">&gt;</tspan> Django · React Native · Next.js · AWS</text>
+    <text x="24" y="146" fill="#c9d1d9" font-size="17"><tspan fill="#a371f7">&gt;</tspan> 65+ launches · 25+ clients · national platforms</text>
   </g>
-  <rect x="471" y="132" width="9" height="18" fill="#c9d1d9" opacity="0">
+  <rect x="606" y="132" width="9" height="18" fill="#c9d1d9" opacity="0">
     <set attributeName="opacity" to="1" begin="2.7s"/>
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" begin="2.7s" dur="1s" repeatCount="indefinite"/>
   </rect>

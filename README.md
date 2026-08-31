@@ -1,8 +1,12 @@
-# Hey, I'm Dias 👋
+# Dias Oralbekov
+
+### Full-stack Developer · Founder of Dala Digital
+
+> **Alchemist Accelerator** · **600k-user AI product** · **65+ launches** · **25+ clients delivered**
 
 <img src="./animated-header.svg" width="860" alt="Dias Oralbekov — full-stack developer" />
 
-Full-stack developer with 4+ years shipping production web and mobile apps — from national government platforms to Alchemist-backed startups.
+Full-stack developer with 4+ years shipping production web and mobile apps — from national government platforms to accelerator-backed startups.
 
 I build fast, own the full stack, and care about outcomes, not just code.
 
