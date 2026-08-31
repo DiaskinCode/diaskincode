@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="180" viewBox="0 0 860 180" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#111722"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <clipPath id="line1"><rect x="24" y="48" width="0" height="34"><animate attributeName="width" from="0" to="812" begin="0.15s" dur="0.85s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line2"><rect x="24" y="85" width="0" height="34"><animate attributeName="width" from="0" to="812" begin="1s" dur="0.85s" fill="freeze"/></rect></clipPath>
+    <clipPath id="line3"><rect x="24" y="122" width="0" height="34"><animate attributeName="width" from="0" to="812" begin="1.85s" dur="0.85s" fill="freeze"/></rect></clipPath>
+  </defs>
+  <rect width="860" height="180" rx="12" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="859" height="179" rx="12" fill="none" stroke="#30363d"/>
+  <line x1="0" y1="30" x2="860" y2="30" stroke="#30363d"/>
+  <circle cx="22" cy="15" r="5" fill="#ff5f56"/>
+  <circle cx="38" cy="15" r="5" fill="#ffbd2e"/>
+  <circle cx="54" cy="15" r="5" fill="#27c93f"/>
+  <text x="430" y="19" fill="#7d8590" font-size="12" text-anchor="middle">dias@github: ~$ ./profile.sh</text>
+  <g clip-path="url(#line1)">
+    <text x="24" y="72" fill="#c9d1d9" font-size="17"><tspan fill="#22d3ee">&gt;</tspan> Full-stack developer · production web + mobile</text>
+  </g>
+  <g clip-path="url(#line2)">
+    <text x="24" y="109" fill="#c9d1d9" font-size="17"><tspan fill="#39d353">&gt;</tspan> 4+ years · 25+ clients · 65+ launches · 600k users</text>
+  </g>
+  <g clip-path="url(#line3)">
+    <text x="24" y="146" fill="#c9d1d9" font-size="17"><tspan fill="#a371f7">&gt;</tspan> Django · React Native · Next.js · AWS</text>
+  </g>
+  <rect x="471" y="132" width="9" height="18" fill="#c9d1d9" opacity="0">
+    <set attributeName="opacity" to="1" begin="2.7s"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" begin="2.7s" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

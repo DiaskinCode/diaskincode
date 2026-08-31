@@ -1,2 +1,0 @@
-# Install Pillow locally when regenerating the portrait:
-Pillow==12.1.1
